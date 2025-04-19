@@ -1,0 +1,31 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+}
+.dbtn{
+    margin: 5px;
+    min-width: 310px;
+    max-width: 310px;
+    background-color: var(--deepblue);
+    border: none;
+}
+.dbtn:hover{
+    background-color: var(--blue);
+    border-left: 3px var(--white);
+    border-left-style: solid;
+}
+.title{
+    font-size: 18px;
+    text-align: left;
+    color: var(--white);
+    margin: 0 5;
+    padding: 0 0;
+}
+p{
+    padding-top: 0px;
+    color: var(--white); 
+    text-align: left;
+}

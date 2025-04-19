@@ -1,0 +1,13 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+}
+.mycontainer{
+    display: flex;
+    padding-left: 15px;
+    
+    margin: 0px 0px;
+}

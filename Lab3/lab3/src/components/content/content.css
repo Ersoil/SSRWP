@@ -1,0 +1,27 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --bground: #f3f3f3;
+}
+.myContent{
+
+    background-color:var(--bground);
+    margin: 10px 10px;
+    margin-left: 15px;
+
+    padding: 5px 10px;
+    display: block;
+    width: 73%;
+
+
+}
+.Contenttext{
+    color: var(--deepblue);
+}
+.Contentheader{
+    color: var(--blue);
+}

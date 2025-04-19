@@ -1,0 +1,26 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --bground-dark: #343434;
+}
+body[theme="dark"]{
+	background-color: var(--bground-dark);
+}
+body[theme="light"]{
+	background-color: white;
+}
+.mycontainer_light{
+    display: flex;
+    padding-left: 15px;
+    margin: 0px 0px;
+}
+.mycontainer_dark{
+    display: flex;
+    padding-left: 15px;
+    background-color: var(--bground-dark);
+    margin: 0px 0px;
+
+}
