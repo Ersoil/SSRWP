@@ -1,0 +1,29 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --bground: #f3f3f3;
+}
+.Footeritem{
+    list-style: none;
+}
+.myFooter{
+
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;
+
+    display: flex;
+    border-top:5px var(--blue);
+    border-top-style:solid;
+    background-color: var(--bground);
+}
+.Footertext{
+    color: var(--deepblue);
+    size: 18vw;
+    margin: 15px 10px;
+}

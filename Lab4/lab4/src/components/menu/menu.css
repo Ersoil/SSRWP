@@ -1,0 +1,60 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --active-light: #e9967aa1;
+    --bground: #f3f3f3;
+    --bground-dark: #343434;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+.mymenu_light{
+    overflow: auto;
+    max-width: 350px;
+    max-height: 615px;
+    margin: 10px 10px;
+    margin-left: 0px;
+    padding: 0px 0px;
+    background-color: var(--bground);
+}
+.menuitem_light{
+    list-style: none;
+    border-left: 5px;
+    border-left-style:solid;
+    border-color: var(--deepblue-border);
+    margin: 5px 5px;
+}
+.menuitem_light-active{
+    list-style: none;
+    border-left: 5px;
+    border-left-style:solid;
+    border-color: var(--active);
+    margin: 5px 5px;
+}
+.mymenu_dark{
+    overflow: auto;
+    max-width: 350px;
+    max-height: 615px;
+    margin: 10px 10px;
+    margin-left: 0px;
+    padding: 0px 0px;
+    background-color: black;
+}
+.menuitem_dark{
+    list-style: none;
+    border-left: 5px;
+    border-left-style:solid;
+    border-color: var(--active);
+    margin: 5px 5px;
+}
+.menuitem_dark-active{
+    list-style: none;
+    border-left: 5px;
+    border-left-style:solid;
+    border-color: var(--deepblue-border);
+    margin: 5px 5px;
+}

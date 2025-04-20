@@ -1,0 +1,26 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+}
+.mycontainer{
+
+    display: center;
+    padding-left: 15px;
+    
+    overflow: auto;
+    -ms-overflow-style: none;
+    border:5px var(--deepblue-border);
+    border-style: solid;
+    
+
+    background: var(--deepblue);
+    margin: 10px 2.5%;
+    
+    max-height: 650px;
+    max-width: 400px;
+    
+   
+}

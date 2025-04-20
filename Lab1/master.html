@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Современные средства web разработки</title>
+        <h1>Vaverko Ilya 4.205-1 </h1>
+    </head>
+
+    <body>
+        <h3 id="Index">Индексатор:</h3>
+        <button id="IncreaseButton" onclick="IndexIncrease()">I++</button>
+        <button id="DecreaseButton">I--</button>
+        
+        <br><br>
+
+        <form id="main_form" method="POST">
+            <label for="Login">Логин:</label>
+            <input name="Login" title="LOGIN" type="text">
+            <br><br>
+            <label for="Password">Пароль</label>
+            <input name="Password" title="PASSWORD" type="password">
+            <br><br>
+            <input value="Очистить" name="Clear"title="Очистить" onclick="ClearForm()" type="button"> 
+            <input value="Войти" name="Send" title="Отправить" type="submit">   
+        </form>
+
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{alert("Страница загружена!!!");});
+            
+            document.getElementById("DecreaseButton").addEventListener("click",IndexDecrease);
+            document.getElementById("main_form").addEventListener("submit",Check);
+
+            if(window.localStorage.getItem("login")!=null && window.localStorage.getItem("password")!=null)
+            {
+                form = document.getElementById("main_form");
+                form.Login.value = window.localStorage.getItem("login");
+                form.Password.value = window.localStorage.getItem("password");
+                if (!autoCheck(form)) ClearForm();
+
+            }
+           
+            var Index = 0;
+
+            function IndexIncrease(){
+                Index+=1;
+                document.getElementById("Index").innerHTML="Индексатор:"+Index;
+            }
+
+            function IndexDecrease(){
+                Index-=1;
+                document.getElementById("Index").innerHTML="Индексатор:"+Index;
+            }
+
+            function Check(event){
+                
+                var obj = document.getElementById("main_form");
+
+                if("admin" == obj.Login.value && "admin" == obj.Password.value){
+                    window.localStorage.setItem('login',obj.Login.value)
+                    window.localStorage.setItem('password',obj.Password.value)
+                }
+                else ClearForm(); 
+            }
+            function autoCheck(obj){
+                if("admin" == obj.Login.value && "admin" == obj.Password.value){
+                    alert("Данные верны...");
+                    return true;
+                }
+                else 
+                {
+                    alert("Данные неверны...");
+                    return false;
+                }
+            }
+            function ClearForm(){
+                form = document.getElementById("main_form");
+                window.localStorage.clear();
+                form.Login.value = null;
+                form.Password.value = null;
+            }
+        </script>
+    </body>    
+   
+</html>
