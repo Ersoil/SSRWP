@@ -11,14 +11,14 @@ import { BrowserRouter} from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 
-export let ThemeContext = React.createContext("dark");
+export let ThemeContext = React.createContext();
 let ThemeIndicator = true;
 let last_visit;
 
 
 
 function App() {
-  const [theme,set_theme] = useState("dark");
+  const [theme,set_theme] = useState("light");
 function changeTheme(){
   if(ThemeIndicator){set_theme("dark");
     ThemeIndicator=false;

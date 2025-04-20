@@ -1,11 +1,16 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import Basic from "../../forms/auth_form/auth_form";
+import  Login  from "../../forms/auth_form/auth_form";
+import Feedback_form from "../../forms/feedback_form/feedback_form";
 function Five() {
     let theme = useContext(ThemeContext)
     return(
         <>
-        <Basic></Basic>
+        <div>
+        <Login/>
+        <Feedback_form></Feedback_form>
+        </div>
+        
         </> 
     );
   }
