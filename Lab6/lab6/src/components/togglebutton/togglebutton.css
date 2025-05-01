@@ -1,0 +1,32 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --active-light: #e9967aa1;
+    --bground: #f3f3f3;
+    --bground-dark: #343434;
+}
+.togglebutton[theme="light"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+    min-width: 30px;
+    width: auto;
+    background-color: var(--deepblue);
+}
+.togglebutton[theme="dark"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+    min-width: 30px;
+    width: auto;
+
+    background-color: var(--active); 
+}
