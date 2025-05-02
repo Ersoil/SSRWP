@@ -1,0 +1,105 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --active-light: #e9967aa1;
+    --bground: #f3f3f3;
+    --bground-dark: #343434;
+}
+.flhead_light
+{
+    text-align: left;
+    color: var(--deepblue);
+    margin: 15px 0px;
+}
+.flitem{
+    list-style: none;
+}
+.fl_light{
+    overflow: auto;
+    margin: 0 5px;
+    padding: 10px;
+    min-height: 350px;
+    max-height: 700px;
+    background-color: var(--bground);
+    border-style: solid;
+    border-color: var(--deepblue-border);
+}
+.submit_light{
+    margin-top: 100px;
+    background-color: var(--deepblue);
+    border-style: none;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+.submit_light:hover{
+    background-color: var(--deepblue-border);
+}
+.field_light{
+    height: auto;
+    margin: 10px 0px;
+    background-color: var(--white);
+    border: none;
+    padding: 15px;
+    width: 90%;
+}
+.fltext_light{
+    word-break: normal;
+    color: var(--blue);
+    height: 100px;
+    margin: auto;
+    background-color: var(--white);
+    border: none;
+    padding: 15px;
+    width: 90%;
+}
+.flhead_dark
+{
+    text-align: left;
+    color: var(--active);
+    margin: 15px 0px;
+}
+.fl_dark{
+    overflow: auto;
+    margin: 0 5px;
+    padding: 10px;
+    min-height: 350px;
+    max-height: 700px;
+    background-color: var(--bground-dark);
+    border-style: solid;
+    border-color: var(--active-light);
+}
+.submit_dark{
+    margin-top: 100px;
+    background-color: var(--active-light);
+    border-style: none;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+.submit_dark:hover{
+    background-color: var(--active);
+}
+.field_dark{
+    color: white;
+    height: auto;
+    margin: 10px 0px;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    width: 90%;
+}
+.fltext_dark{
+    color: white;
+    word-break: normal;
+    height: 100px;
+    margin: auto;
+    background-color:black;
+    border: none;
+    padding: 15px;
+    width: 90%;
+}
