@@ -33,6 +33,7 @@ export const Feedback_form= () =>{
       .then(response=>
         {
           values = structuredClone(response.data.map((element) => element));
+          console.log("Выгружены:",values)
           dispatch({type: "addfeedback", element: values[values.length-1]})
         }
       )
@@ -47,11 +48,12 @@ export const Feedback_form= () =>{
     axios.post('http://localhost:8000/feedbacks', values)
     .then(response => {
         console.log('Создан новый отзыв:', response.data);
+        getlastElement();
     })
     .catch(error => {
         console.error('Ошибка при создании отзыва:', error);
     });
-    getlastElement();
+    
   }, []);
 
   return (
