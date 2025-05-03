@@ -14,9 +14,9 @@
 }
 .myFooter_light{
 
-    position:absolute;
-    bottom:0;
-    width:100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
 
     display: flex;
@@ -34,9 +34,9 @@
 }
 .myFooter_dark{
 
-    position:absolute;
-    bottom:0;
-    width:100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     display: flex;
     border-top:5px var(--active);

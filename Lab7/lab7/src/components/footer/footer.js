@@ -4,6 +4,7 @@ import { Container, Typography, List, ListItem} from "@mui/material";
 import { ThemeContext } from "../../App";
 import "./footer.css";
 import { useDispatch } from "react-redux";
+import BottomNavigation from '@mui/material/BottomNavigation'
 
 function Footer() {
     const theme = useContext(ThemeContext);
@@ -11,6 +12,7 @@ function Footer() {
     const toggleDrawer = () => {
         dispatch({ type: "toggleFeedbackMenu" }); 
     };
+
     
     return (
         <footer className={"myFooter_" + theme}>
