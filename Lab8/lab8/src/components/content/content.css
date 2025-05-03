@@ -1,0 +1,50 @@
+:root {
+	/* Colors */
+	--deepblue: #003961;
+	--deepblue-border: #025088;
+	--white: #fff;
+	--blue: #025088;
+    --active: #e9967a;
+    --active-light: #e9967aa1;
+    --bground: #f3f3f3;
+    --bground-dark: #343434;
+}
+
+.myContent_light{
+    
+    overflow: auto;
+
+    background-color:var(--bground);
+    margin: 10px 10px;
+
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+
+
+}
+.Contenttext_light{
+    color: var(--deepblue);
+}
+.Contentheader_light{
+    color: var(--blue);
+}
+.myContent_dark{
+
+    overflow: auto;
+    
+    background-color:black;
+    margin: 10px 10px;
+
+    display: block;
+    max-width: auto;
+
+
+}
+.Contenttext_dark{
+    color: var(--active-light);
+}
+.Contentheader_dark{
+    color: var(--active);
+}
+
